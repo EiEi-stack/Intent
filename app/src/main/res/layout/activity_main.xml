@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFa2"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/main_title_text"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/rPhoneCall"
+            style="@style/radio_style"
+            android:text="Call Phone With Two Method" />
+
+        <RadioButton
+            android:id="@+id/rSendEmail"
+            style="@style/radio_style"
+            android:text="Send Email to whoever you wish" />
+
+        <RadioButton
+            android:id="@+id/rVideoPlay"
+            style="@style/radio_style"
+            android:text="Learn to Play Video" />
+
+        <RadioButton
+            android:id="@+id/rsendDrawablePics"
+            style="@style/radio_style"
+            android:text="Send Drawable Pic" />
+
+        <RadioButton
+            android:id="@+id/rSendSdCardPis"
+            style="@style/radio_style"
+            android:text="Send Internal Memory Pic" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvChoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="GO" />
+</LinearLayout>
